@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian <Project-2></Project-2></title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+body {display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+ }
+
+    .container {
+    height: 760px;
+    max-width: 760px;
+    display: grid;
+       background-color: #000;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(7, 100px);
+    gap: 10px;
+    border: 10px solid #232629;
+  }
+  .white-box {background-color: #F0F1EC;}
+  .yellow-box {background-color: #F9D01E;} 
+  .red-box {background-color: #E72F24;}
+
+
+.w1 {grid-column: span 2; grid-row: span 2;}
+.y1 {grid-column: span 3; grid-row: span 2;}
+.w2 {grid-row: span 3;}
+.r1 {grid-row: span 2;}
+.r2 {grid-column: span 3; grid-row: span 2;}
+.w3 {grid-column: span 2;}
+.r4 {grid-area: 4 / 4 / 7 / 7;}
+.y2 {grid-area: 4 / 7 / 7 / 8;}
+.w4 {grid-column: span 2;}
+.w6 {grid-column: span 2;}
+.w7 {grid-column: span 2;}
+.y4 {grid-column: span 3;}
+.w8 {grid-column: span 2;}
+
+
+
+
+ 
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item white-box w1"></div>
+    <div class="item yellow-box y1"></div>
+    <div class="item white-box w2"></div>
+    <div class="item red-box r1"></div>
+    <div class="item red-box r2"></div>
+    <div class="item white-box w3"></div>
+    <div class="item red-box r3"></div>
+    <div class="item white-box w4"></div>
+    <div class="item white-box w5"></div>
+    <div class="item red-box r4"></div>
+    <div class="item yellow-box y2"></div>
+    <div class="item white-box w6"></div>
+    <div class="item yellow-box y3"></div>
+    <div class="item white-box w7"></div>
+    <div class="item yellow-box y4"></div>
+    <div class="item white-box w8"></div>
+    
+    
+
+    
+   
+  </div>
+
+</body>
+
+</html>
